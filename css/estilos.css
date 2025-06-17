@@ -5,7 +5,7 @@
   box-sizing: border-box;
 }
 
-.btn, .btn-footer, .btn-cita {
+.formulario button[type=submit], .btn, .btn-footer, .btn-cita {
   padding: 0.5rem 1rem;
   border-radius: 20px;
   text-decoration: none;
@@ -274,6 +274,231 @@ img {
   margin-top: 0.5rem 0;
   font-weight: bold;
   font-size: 1em;
+}
+
+/* html clinica */
+.text-clinica {
+  margin-top: 1.5rem;
+  text-align: center;
+}
+.text-clinica .clinica-titulo {
+  margin-bottom: 1.5rem;
+}
+.text-clinica p {
+  margin: 1.5rem 15%;
+  line-height: 1.8;
+}
+
+.galeria-container {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(5, auto);
+  gap: 2px 2px;
+  grid-template-areas: "img-1 img-1 img-2 img-2 img-2 img-2 img-3 img-3" "img-1 img-1 img-2 img-2 img-2 img-2 img-3 img-3" "img-4 img-4 img-4 img-5 img-5 img-6 img-6 img-6" "img-4 img-4 img-4 img-5 img-5 img-6 img-6 img-6" ". . . . . . . .";
+  margin: 5% 10% 0 10%;
+}
+.galeria-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 5px;
+}
+
+.img-1 {
+  grid-area: img-1;
+}
+
+.img-2 {
+  grid-area: img-2;
+}
+
+.img-3 {
+  grid-area: img-3;
+}
+
+.img-4 {
+  grid-area: img-4;
+}
+
+.img-5 {
+  grid-area: img-5;
+}
+
+.img-6 {
+  grid-area: img-6;
+}
+
+/* html equipo */
+.equipo {
+  padding: 2rem 10%;
+  text-align: center;
+}
+.equipo .equipo-container h2 {
+  margin-bottom: 1rem;
+}
+.equipo .equipo-container p {
+  margin-top: 1rem;
+  margin-bottom: 2.5rem;
+  line-height: 1.7;
+}
+
+.grid-equipo {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;
+  justify-items: center;
+  margin-top: 2.5rem;
+}
+
+.miembro img {
+  width: 100%;
+  max-width: 320px;
+  height: auto;
+  border-radius: 20px;
+  transition: transform 0.3s ease;
+}
+.miembro img:hover {
+  transform: scale(1.05);
+}
+
+/* html tratamientos */
+.contenedor-tratamiento {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0;
+}
+
+.tratamientos-box {
+  width: 70%;
+  margin: 1.5rem 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  padding: 2.5rem;
+}
+.tratamientos-box button {
+  background-color: #48d8eb;
+  color: #333;
+  padding: 1rem;
+  border: none;
+  border-radius: 10px;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+  font-size: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10%;
+  transition: background-color 0.3s ease;
+}
+.tratamientos-box button .icon-tr {
+  width: 24px;
+  height: auto;
+}
+.tratamientos-box button:hover {
+  background-color: #dfe0e0;
+}
+
+/* html contacto */
+.formulario-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: 2rem 0;
+  max-width: 1000px;
+  margin: 2rem auto;
+  gap: 2rem;
+}
+
+.formulario, .mapa {
+  flex: 1 1 400px;
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.formulario h2 {
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+.formulario label {
+  display: block;
+  margin-top: 1rem;
+  font-weight: bold;
+}
+.formulario input[type=text],
+.formulario input[type=tel],
+.formulario textarea {
+  width: 100%;
+  padding: 0.6666666667rem;
+  margin-top: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-family: "Poppins", sans-serif;
+}
+.formulario textarea {
+  min-height: 100px;
+}
+.formulario .checkbox {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.5rem;
+}
+.formulario .checkbox label {
+  font-weight: normal;
+  margin-top: 0;
+}
+.formulario .checkbox input[type=checkbox] {
+  width: auto;
+}
+.formulario button[type=submit] {
+  background-color: #0077cc;
+  margin-top: 1.5rem;
+  padding: 0.8rem 1.5rem;
+  transition: background-color 0.3s ease;
+}
+.formulario button[type=submit]:hover {
+  background-color: #005fa3;
+}
+
+.mapa h3 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  color: #333;
+}
+.mapa p {
+  margin-bottom: 0.5rem;
+  font-size: 0.95em;
+}
+.mapa iframe {
+  border-radius: 5px;
+}
+
+.footer-pcontacto {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  background-color: rgb(236.25, 236.25, 236.25);
+}
+.footer-pcontacto img {
+  width: 15%;
+  max-width: 50px;
+  height: auto;
 }
 
 /*# sourceMappingURL=estilos.css.map */
