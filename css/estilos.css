@@ -496,8 +496,8 @@ img {
   background-color: rgb(236.25, 236.25, 236.25);
 }
 .footer-pcontacto img {
-  width: 15%;
-  max-width: 50px;
+  width: 100%;
+  max-width: 180px;
   height: auto;
 }
 
