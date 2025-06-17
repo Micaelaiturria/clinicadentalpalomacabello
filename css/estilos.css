@@ -1,0 +1,279 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.btn, .btn-footer, .btn-cita {
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  text-decoration: none;
+  display: inline-block;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fff;
+}
+
+/* header*/
+.propia {
+  background-color: #f9f9f9;
+}
+
+.navbar-brand img {
+  width: 300px;
+}
+
+.navbar-nav .nav-link {
+  margin-right: 70px;
+  font-size: 1.125rem;
+  color: #333;
+  font-weight: 700;
+  text-decoration: none;
+}
+.navbar-nav .nav-link.active, .navbar-nav .nav-link:hover {
+  color: #008BA6;
+}
+
+.btn-cita {
+  background-color: #008BA6;
+  padding: 15px;
+  border-radius: 40px;
+}
+
+/* Footer */
+footer {
+  background-color: #f9f9f9;
+  padding: 2rem;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 2rem;
+  margin: 0 5%;
+}
+
+.footer-about img {
+  margin-bottom: 1rem;
+}
+.footer-about p {
+  font-size: 0.9em;
+  margin-bottom: 1rem;
+}
+
+/*iconos redes*/
+.social-icons img {
+  margin-right: 0.5rem 0;
+  width: 24px;
+  height: 24px;
+}
+
+.footer-links h4 {
+  margin-bottom: 1rem;
+  color: #333;
+}
+.footer-links ul {
+  list-style: none;
+  padding-left: 0;
+}
+.footer-links ul li {
+  margin: 0.5rem 0;
+}
+.footer-links ul li a {
+  text-decoration: none;
+  color: #595A5A;
+}
+.footer-links ul li a:hover {
+  color: #008BA6;
+}
+.footer-links li {
+  color: #595A5A;
+  font-size: 0.9em;
+}
+
+.footer-contact h4 {
+  margin-bottom: 1rem;
+  color: #333;
+}
+.footer-contact p {
+  margin: 0.5rem 0;
+  font-size: 0.9em;
+  color: #595A5A;
+}
+
+/*boton pedir cita*/
+.btn-footer {
+  background-color: #00c6c6;
+  margin-top: 1rem;
+}
+
+/* Main - index.html */
+/* Sección banner - imagen y ubicacion */
+.banner {
+  background-image: url(../medios/katarzyna-zygnerska-YNvApgvL7UQ-unsplash.jpg);
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding-left: 10%;
+  padding-bottom: 3%;
+}
+
+.text-banner h1 {
+  margin-bottom: 0.5rem 0;
+}
+.text-banner h1 strong {
+  font-weight: 700;
+}
+
+.text-banner2 p {
+  max-width: 60%;
+}
+
+/* Sección Objetivo / Confianza */
+.objetivo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  gap: 2rem;
+  margin: 5% 0;
+}
+
+.content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.content h2 {
+  margin-bottom: 1rem;
+}
+.content p {
+  margin-bottom: 1rem;
+}
+.content a.btn {
+  width: auto;
+  max-width: 45%;
+}
+
+img {
+  width: 50%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.btn {
+  background: #00c6c6;
+  margin-top: 1rem;
+}
+
+/* Sección tratamientos/index */
+.tratamientos {
+  padding: 2rem;
+  background: #f9f9f9;
+  text-align: center;
+}
+.tratamientos h2 {
+  margin-bottom: 0.5rem 0;
+}
+.tratamientos .subtitulo {
+  margin-bottom: 1.5rem;
+  color: #777;
+}
+
+.grid-tratamientos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.tratamiento {
+  background: #fff;
+  padding: 1.5rem;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  text-align: left;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+}
+.tratamiento img {
+  max-width: 100px;
+  height: auto;
+  margin-right: 1rem;
+}
+.tratamiento .descrip-tratamiento {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.tratamiento .descrip-tratamiento h2 {
+  color: #008BA6;
+  font-size: 1.25em;
+  margin-bottom: 0.5rem 0;
+  text-align: left;
+}
+.tratamiento .descrip-tratamiento p {
+  font-size: 0.9em;
+  text-align: left;
+}
+
+/* Testimonios */
+.testimonios {
+  padding: 2rem;
+  text-align: center;
+  margin: 0 10%;
+}
+.testimonios h2 {
+  margin-bottom: 1.5rem;
+}
+
+.grid-testimonios {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.testimonial {
+  background: #f3f9fa;
+  padding: 1.5rem;
+  border-radius: 10px;
+}
+.testimonial .estrellas {
+  font-size: 1.2rem;
+  color: #ffc107;
+  margin-bottom: 1rem;
+}
+.testimonial p {
+  font-size: 0.95em;
+  margin-bottom: 1rem;
+  min-height: 60px;
+}
+.testimonial h4 {
+  margin-top: 0.5rem 0;
+  font-weight: bold;
+  font-size: 1em;
+}
+
+/*# sourceMappingURL=estilos.css.map */
