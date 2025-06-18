@@ -26,7 +26,6 @@
   
   .objetivo,
   .objetivo.reverse {
-    display: flex;
     flex-direction: column;
     text-align: center;
 
@@ -73,6 +72,10 @@
   .btn-footer {
     width: 100%;
   }
+  .social-icons {
+    width: 5%;
+    height: auto;
+  }
 
   // logos pie contacto 
   .footer-pcontacto { 
@@ -86,14 +89,39 @@
     max-width: 180px;
     height: auto;
   }
+  }
 
+  grid-equipo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+  }
+
+  .tratamientos-box {
+  @include grid-layout(repeat(1, 1fr), ($spacing-unit * 1.5)); 
+  padding: ($spacing-unit * 2.5); 
+
+  button { 
+    @include button-base-mixin($color-button-tratamientos, $color-text-default, $spacing-unit, $border-radius-medium); 
+    font-size: $font-size-base; 
+    @include flex-container(column, center, center);
+    gap: 10%;
+    transition: background-color 0.3s ease;
+
+    .icon-tr {
+      width: 24px;
+      height: auto;
+    }
+
+    &:hover {
+      background-color: $color-button-tratamientos-hover;
+    }
+  }
 }
-.grid-equipo{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  
-}
+
+
+
 }
 
 // MediaQ para Tablets (401px - 1200px)
@@ -155,5 +183,10 @@
 
   .btn-footer {
     width: auto;
+  }
+  .tratamientos-box{
+    display: grid;
+    grid-template-columns: 1fr 1fr;   
+    grid-template-rows: repeat(4, 100px)
   }
 }
