@@ -23,8 +23,10 @@
     padding-right: 1rem;
   }
 
+  
   .objetivo,
   .objetivo.reverse {
+    display: flex;
     flex-direction: column;
     text-align: center;
 
@@ -71,6 +73,27 @@
   .btn-footer {
     width: 100%;
   }
+
+  // logos pie contacto 
+  .footer-pcontacto { 
+  @include flex-container(column, center, center);
+  gap: ($spacing-unit);
+  padding: ($spacing-unit);
+  background-color: darken($color-background-light, 5); 
+
+  img {
+    width: 70%; 
+    max-width: 180px;
+    height: auto;
+  }
+
+}
+.grid-equipo{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+}
 }
 
 // MediaQ para Tablets (401px - 1200px)
