@@ -2,33 +2,29 @@
 
 /* html equipo */
 .equipo {
-  padding: ($spacing-unit * 2) 10%;
+  padding: ($spacing-unit * 2) 10%; //Texto
   text-align: center;
-  .equipo-container { 
-    h2 {
-      margin-bottom: $spacing-unit;
-    }
-    p {
-      margin-top: $spacing-unit;
-      margin-bottom: ($spacing-unit * 2.5); 
-      line-height: 1.7;
-    }
   }
-}
 
 .grid-equipo {
-  @include grid-layout(repeat(3, 1fr), ($spacing-unit * 2.5)); 
-  justify-items: center;
-  margin-top: ($spacing-unit * 2.5); // 5%
-}
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-top: 2rem;
+  }
 
 .miembro {
+  flex: 1 1 30%; 
+  display: flex;
+  justify-content: center;
+
   img {
     width: 100%;
     max-width: 320px;
     height: auto;
     border-radius: $border-radius-large;
     transition: transform 0.3s ease;
+
     &:hover {
       transform: scale(1.05);
     }

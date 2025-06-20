@@ -334,23 +334,19 @@ img {
   padding: 2rem 10%;
   text-align: center;
 }
-.equipo .equipo-container h2 {
-  margin-bottom: 1rem;
-}
-.equipo .equipo-container p {
-  margin-top: 1rem;
-  margin-bottom: 2.5rem;
-  line-height: 1.7;
-}
 
 .grid-equipo {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2.5rem;
-  justify-items: center;
-  margin-top: 2.5rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-top: 2rem;
 }
 
+.miembro {
+  flex: 1 1 30%;
+  display: flex;
+  justify-content: center;
+}
 .miembro img {
   width: 100%;
   max-width: 320px;
@@ -604,21 +600,17 @@ img {
 }
 
 .grid-equipo {
-  display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1.5rem;
 }
 
-.grid-equipo .miembro {
+.miembro {
   width: 90%;
+  margin-bottom: 1.5rem;
 }
-
-.grid-equipo .miembro img {
+.miembro img {
   width: 100%;
-  height: auto;
-  display: block;
-  border-radius: 10px;
+  max-width: 100%;
 }
 
 .tratamientos-box {

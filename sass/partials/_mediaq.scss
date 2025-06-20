@@ -124,22 +124,21 @@
   // equipo
 
   .grid-equipo {
-    display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1.5rem; 
   }
 
-  .grid-equipo .miembro {
-    width: 90%; 
+  .miembro {
+    width: 90%;
+    margin-bottom: 1.5rem;
+
+    img {
+      width: 100%;
+      max-width: 100%; 
+    }
   }
 
-  .grid-equipo .miembro img {
-    width: 100%;
-    height: auto;
-    display: block;
-    border-radius: 10px;
-  }
+
 
 
   .tratamientos-box {
