@@ -106,21 +106,6 @@
     width: auto;
     padding: 0.5rem 1rem;
   }
-}
-
-  // logos pie contacto 
-  .footer-pcontacto { 
-    @include flex-container(column, center, center);
-    gap: ($spacing-unit);
-    padding: ($spacing-unit);
-    background-color: darken($color-background-light, 5); 
-
-    img {
-      width: 70%; 
-      max-width: 180px;
-      height: auto;
-    }
-  }
   // equipo
 
   .grid-equipo {
@@ -137,7 +122,22 @@
       max-width: 100%; 
     }
   }
+}
 
+  // logos pie contacto 
+  .footer-pcontacto { 
+    @include flex-container(column, center, center);
+    gap: ($spacing-unit);
+    padding: ($spacing-unit);
+    background-color: darken($color-background-light, 5); 
+
+    img {
+      width: 70%; 
+      max-width: 180px;
+      height: auto;
+    }
+  }
+  
 
 
 
