@@ -524,14 +524,22 @@ img {
     flex-direction: column;
     text-align: center;
   }
+  .objetivo .content,
+  .objetivo.reverse .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .objetivo .btn,
+  .objetivo.reverse .btn {
+    margin-top: 1rem;
+    display: inline-block;
+    text-align: center;
+  }
   .objetivo img,
   .objetivo.reverse img {
     width: 100%;
-    margin-top: 1rem;
-  }
-  .objetivo .content a.btn,
-  .objetivo.reverse .content a.btn {
-    width: 100%;
+    height: auto;
   }
   .grid-tratamientos {
     grid-template-columns: 1fr;
@@ -550,70 +558,101 @@ img {
     grid-template-columns: 1fr;
   }
   .footer-container {
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
+    padding: 1rem;
   }
   .footer-about img {
-    width: 200px;
-  }
-  .btn-footer {
-    width: 100%;
+    width: 150px;
+    margin-bottom: 1rem;
   }
   .social-icons {
-    width: 5%;
-    height: auto;
-  }
-  .footer-pcontacto {
+    width: 100%;
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center;
     gap: 1rem;
-    padding: 1rem;
-    background-color: rgb(236.25, 236.25, 236.25);
+    margin: 1rem 0;
   }
-  .footer-pcontacto img {
-    width: 70%;
-    max-width: 180px;
+  .social-icons img {
+    width: 30px;
     height: auto;
   }
-  grid-equipo {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  .footer-links,
+  .footer-contact {
+    margin-top: 1.5rem;
   }
-  .tratamientos-box {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 1.5rem;
-    padding: 2.5rem;
-  }
-  .tratamientos-box button {
-    background-color: #48d8eb;
-    color: #333;
-    padding: 1rem;
-    border: none;
-    border-radius: 10px;
-    text-decoration: none;
-    display: inline-block;
-    cursor: pointer;
-    text-align: center;
-    font-size: 1rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 10%;
-    transition: background-color 0.3s ease;
-  }
-  .tratamientos-box button .icon-tr {
-    width: 24px;
-    height: auto;
-  }
-  .tratamientos-box button:hover {
-    background-color: #dfe0e0;
+  .btn-footer {
+    width: auto;
+    padding: 0.5rem 1rem;
   }
 }
+.footer-pcontacto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  background-color: rgb(236.25, 236.25, 236.25);
+}
+.footer-pcontacto img {
+  width: 70%;
+  max-width: 180px;
+  height: auto;
+}
+
+.grid-equipo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.grid-equipo .miembro {
+  width: 90%;
+}
+
+.grid-equipo .miembro img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+}
+
+.tratamientos-box {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1.5rem;
+  padding: 2.5rem;
+}
+.tratamientos-box button {
+  background-color: #48d8eb;
+  color: #333;
+  padding: 1rem;
+  border: none;
+  border-radius: 10px;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10%;
+  transition: background-color 0.3s ease;
+}
+.tratamientos-box button .icon-tr {
+  width: 24px;
+  height: auto;
+}
+.tratamientos-box button:hover {
+  background-color: #dfe0e0;
+}
+
 @media (min-width: 401px) and (max-width: 1200px) {
   .navbar-brand img {
     width: 220px;

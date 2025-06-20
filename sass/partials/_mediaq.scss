@@ -29,14 +29,23 @@
     flex-direction: column;
     text-align: center;
 
-    img {
-      width: 100%;
-      margin-top: 1rem;
+    .content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
 
-    .content a.btn {
-      width: 100%;
+    .btn {
+      margin-top: 1rem;
+      display: inline-block;
+      text-align: center;
     }
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+
   }
 
   .grid-tratamientos {
@@ -60,43 +69,78 @@
     grid-template-columns: 1fr;
   }
 
+  //footer
+
   .footer-container {
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
+    padding: 1rem;
   }
 
   .footer-about img {
-    width: 200px;
+    width: 150px;
+    margin-bottom: 1rem;
+  }
+
+  .social-icons {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 1rem 0;
+  }
+
+  .social-icons img {
+    width: 30px;
+    height: auto;
+  }
+
+  .footer-links,
+  .footer-contact {
+    margin-top: 1.5rem;
   }
 
   .btn-footer {
-    width: 100%;
+    width: auto;
+    padding: 0.5rem 1rem;
   }
-  .social-icons {
-    width: 5%;
-    height: auto;
-  }
+}
 
   // logos pie contacto 
   .footer-pcontacto { 
-  @include flex-container(column, center, center);
-  gap: ($spacing-unit);
-  padding: ($spacing-unit);
-  background-color: darken($color-background-light, 5); 
+    @include flex-container(column, center, center);
+    gap: ($spacing-unit);
+    padding: ($spacing-unit);
+    background-color: darken($color-background-light, 5); 
 
-  img {
-    width: 70%; 
-    max-width: 180px;
-    height: auto;
+    img {
+      width: 70%; 
+      max-width: 180px;
+      height: auto;
+    }
   }
-  }
+  // equipo
 
-  grid-equipo {
+  .grid-equipo {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    
+    align-items: center;
+    gap: 1.5rem; 
   }
+
+  .grid-equipo .miembro {
+    width: 90%; 
+  }
+
+  .grid-equipo .miembro img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+  }
+
 
   .tratamientos-box {
   @include grid-layout(repeat(1, 1fr), ($spacing-unit * 1.5)); 
@@ -122,7 +166,7 @@
 
 
 
-}
+
 
 // MediaQ para Tablets (401px - 1200px)
 @media (min-width: $tablet-min) and (max-width: $tablet-max) {
