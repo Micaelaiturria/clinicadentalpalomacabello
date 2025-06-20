@@ -23,7 +23,6 @@
     padding-right: 1rem;
   }
 
-  
   .objetivo,
   .objetivo.reverse {
     flex-direction: column;
@@ -122,7 +121,7 @@
       max-width: 100%; 
     }
   }
-}
+
 
   // logos pie contacto 
   .footer-pcontacto { 
@@ -144,6 +143,7 @@
   .tratamientos-box {
   @include grid-layout(repeat(1, 1fr), ($spacing-unit * 1.5)); 
   padding: ($spacing-unit * 2.5); 
+  }
 
   button { 
     @include button-base-mixin($color-button-tratamientos, $color-text-default, $spacing-unit, $border-radius-medium); 
