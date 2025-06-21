@@ -35,7 +35,7 @@
   @include flex-container(row, center, center); 
   padding: ($spacing-unit * 2);
   gap: ($spacing-unit * 2);
-  margin: 5% 0; 
+  margin: 5% 10%; 
 }
 .content {
     flex: 1;

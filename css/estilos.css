@@ -151,7 +151,7 @@ footer {
   align-items: center;
   padding: 2rem;
   gap: 2rem;
-  margin: 5% 0;
+  margin: 5% 10%;
 }
 
 .content {
@@ -295,7 +295,7 @@ img {
   grid-template-rows: repeat(5, auto);
   gap: 2px 2px;
   grid-template-areas: "img-1 img-1 img-2 img-2 img-2 img-2 img-3 img-3" "img-1 img-1 img-2 img-2 img-2 img-2 img-3 img-3" "img-4 img-4 img-4 img-5 img-5 img-6 img-6 img-6" "img-4 img-4 img-4 img-5 img-5 img-6 img-6 img-6" ". . . . . . . .";
-  margin: 5% 10% 0 10%;
+  margin: 5% 10% 5% 10%;
 }
 .galeria-container img {
   width: 100%;
@@ -340,6 +340,7 @@ img {
   justify-content: space-between;
   gap: 2rem;
   margin-top: 2rem;
+  margin-bottom: 4%;
 }
 
 .miembro {
@@ -376,7 +377,7 @@ img {
   padding: 2.5rem;
 }
 .tratamientos-box button {
-  background-color: #48d8eb;
+  background-color: #37a9fa;
   color: #333;
   padding: 1rem;
   border: none;
@@ -616,7 +617,7 @@ img {
     padding: 2.5rem;
   }
   button {
-    background-color: #48d8eb;
+    background-color: #37a9fa;
     color: #333;
     padding: 1rem;
     border: none;
